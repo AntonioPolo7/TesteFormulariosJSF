@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Teste com Componentes de formularios</title>
+</h:head>
+<h:body>
+
+	<h:panelGrid columns="3">
+		<img><h:graphicImage value="/Images/cadastro.png"  /></img>
+		<h:outputText value="Exemplo de Projeto com Componentes e Formularios" />
+	</h:panelGrid>
+
+
+	<h:form>
+
+		<h:panelGrid columns="2">
+
+			<h:outputLabel value="Nome:" />
+			<h:inputText maxlength="50" size="30" />
+
+					</h:panelGrid>
+
+
+
+		<h:panelGrid columns="1">
+
+			<h:selectManyCheckbox>
+
+				<f:selectItem itemLabel="Abacaxi" itemValue="A" />
+				<f:selectItem itemLabel="Laranja" itemValue="L" />
+
+			</h:selectManyCheckbox>
+
+
+
+			<h:selectOneRadio>
+
+				<f:selectItem itemLabel="Abacaxi" itemValue="A" />
+				<f:selectItem itemLabel="Laranja" itemValue="L" />
+
+			</h:selectOneRadio>
+
+
+
+			<h:selectOneMenu>
+
+				<f:selectItem itemLabel="Abacaxi____" itemValue="A" />
+				<f:selectItem itemLabel="Laranja____" itemValue="L" />
+
+
+			</h:selectOneMenu>
+
+		</h:panelGrid>
+
+		<br></br>
+		<!-- Insere linhas -->
+		<br></br>
+
+
+
+		<h:panelGrid columns="4">
+
+			<h:commandButton value="Gravar" />
+			<h:commandButton value="Buscar" />
+			<h:commandButton value="Editar" />
+			<h:commandButton value="Cancelar" />
+			<h:commandLink value="Voltar" action = "menu2" />
+
+		</h:panelGrid>
+
+	</h:form>
+
+</h:body>
+</html>
